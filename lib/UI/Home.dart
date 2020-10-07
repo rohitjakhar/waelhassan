@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
                               child: Text(
                                 data[index]['title']['rendered'],
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold),
+                                    fontSize: 18, fontWeight: FontWeight.bold),
                               ),
                             ),
                             Text(data[index]['excerpt']['rendered'])
