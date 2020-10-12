@@ -44,17 +44,10 @@ class _HomeState extends State<Home> {
                   return ListView.builder(
                     
                       itemBuilder: (BuildContext context, int index) {
-                        if (index == 7) {
-                          pageNum = pageNum + 1;
-                          setState(() {
-                            getData();
-                          });
-                        }
-                        return Padding(
-                          
+                    
+                       return Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Card(
-                            
                               elevation: 10,
                               shadowColor: Colors.grey,
                               shape: RoundedRectangleBorder(
@@ -71,7 +64,7 @@ class _HomeState extends State<Home> {
                                         style: TextStyle(
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.black12),
+                                            color: Colors.black),
                                       ),
                                     ),
                                     Text(snapshot.data[index].des)
