@@ -3,6 +3,7 @@ import 'Home.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     title: 'Wael Hassan',
     home: Home(),
   ));
